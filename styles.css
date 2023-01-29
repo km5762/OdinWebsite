@@ -15,10 +15,6 @@ html, body {
     justify-content: space-between;
 }
 
-.nav {
-    height: 10%;
-}
-
 .intro {
     display: flex;
     align-items: center;
@@ -26,7 +22,7 @@ html, body {
 
 .logo {
     border-radius: 50%;
-    height: auto;
+    height: 5em;
 }
 
 .nav .links a {
@@ -50,7 +46,7 @@ html, body {
 .intro .signupblock {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 1em;
 }
 
 .intro button {
