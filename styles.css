@@ -1,28 +1,64 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: 'Roboto', sans-serif;
 }
 
-header {
+.nav, .intro {
     background-color: #1f2937;
     height: 100px;
-    padding: 25px;
+    padding: 25px 300px;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
+}
+
+.intro {
+    height: 200px;
+    gap: 200px;
 }
 
 .logo {
     border-radius: 50%;
 }
 
-header .links a {
-    font-family: 'Roboto', sans-serif;
+.nav .links a {
     text-decoration: none;
-    color: #e5e7eb;
     size: 18px;
 }
 
-header .links {
+.nav .links {
+    align-self: center;
     display: flex;
     gap: 30px;
+    flex-shrink: 0;
+    margin-left: 50px;
+}
+
+.intro .signupblock h1 {
+    size: 48px;
+    font-weight: bold;
+}
+
+.intro .signupblock {
+    flex-wrap: nowrap;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.intro button {
+    background-color: #3882f6;
+    border: none;
+    padding: 5px 10px;
+    border-radius: 15%;
+}
+
+.nav .links a, .intro .signupblock h1, .intro .signupblock p, .intro button{
+    color: #e5e7eb;
+}
+
+.intro img {
+    max-width: 100%;
+    height: auto;
+    flex-shrink: 0;
 }
